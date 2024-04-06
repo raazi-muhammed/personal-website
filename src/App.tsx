@@ -1,36 +1,13 @@
-"use client";
-import { SparklesCore } from "./components/ui/sparkles";
+import Hero from "./pages/homepage/Hero";
+import Projects from "./pages/homepage/Projects";
+import Skills from "./pages/homepage/Skills";
 
-export default function SparklesPreview() {
+export default function App() {
     return (
-        <div className="h-screen w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md">
-            <h1 className="md:text-5xl text-3xl lg:text-9xl font-bold text-center text-white relative z-20">
-                Hello, I'm Raazi
-                <br />
-            </h1>
-            <p className="text-base opacity-50 font-normal text-white max-w-lg my-4 text-center">
-                Contact me at official@raazi.live
-            </p>
-            <div className="w-[40rem] h-40 relative">
-                {/* Gradients */}
-                <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
-                <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4" />
-                <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[5px] w-1/4 blur-sm" />
-                <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-1/4" />
-
-                {/* Core component */}
-                <SparklesCore
-                    background="transparent"
-                    minSize={0.4}
-                    maxSize={1}
-                    particleDensity={1200}
-                    className="w-full h-full"
-                    particleColor="#FFFFFF"
-                />
-
-                {/* Radial Gradient to prevent sharp edges */}
-                <div className="absolute inset-0 w-full h-full bg-black [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
-            </div>
-        </div>
+        <main className="min-h-screen bg-gradient-to-tr from-[#100730] from-0% via-black via-30% to-[#100730] to-100% text-foreground dark">
+            <Hero />
+            <Projects />
+            <Skills />
+        </main>
     );
 }
