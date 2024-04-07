@@ -1,4 +1,4 @@
-import { ChevronRight, Github, Globe, Workflow } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 import Container from "../../components/layout/Components";
 import Heading from "../../components/layout/Heading";
 import {
@@ -13,116 +13,9 @@ import {
 import { motion } from "framer-motion";
 import { defaultAnimation } from "../../utils/animations";
 import { NavLink } from "react-router-dom";
+import { projects } from "../../constants/projects";
 
 export default function Projects() {
-    const projects: {
-        name: string;
-        description: string;
-        date: string;
-        preview?: string;
-        links: {
-            name: string;
-            url: string;
-            icon: JSX.Element;
-        }[];
-    }[] = [
-        {
-            name: "Omniflow",
-            description:
-                "Project Toolkit for Effortless Planning and Management of Projects.",
-            date: "Mar 2024 - Present",
-            preview: "/images/homepage/omniflow-preview.png",
-            links: [
-                {
-                    name: "Git repo",
-                    url: "https://github.com/raazi-muhammed/omniflow",
-                    icon: <Github size="1em" />,
-                },
-            ],
-        },
-        {
-            name: "Shop Nexus",
-            description:
-                "A comprehensive Multi-Vendor E-Commerce platform facilitating buying and selling of products",
-            date: "Sep 2023 - Nov 2023",
-            preview: "/images/homepage/shop-nexus-preview.png",
-            links: [
-                {
-                    name: "Git repo",
-                    url: "https://github.com/raazi-muhammed/shop-nexus",
-                    icon: <Github size="1em" />,
-                },
-                {
-                    name: "Live link",
-                    url: "https://shopnexus.live/",
-                    icon: <Globe size="1em" />,
-                },
-            ],
-        },
-        {
-            name: "NPM: React Connect Div",
-            description: "Developed a npm package to connect two divs together",
-            date: "Apr 2023 - Apr 2023",
-            preview: "/images/homepage/react-connect-div.png",
-            links: [
-                {
-                    name: "Git repo",
-                    url: "https://github.com/raazi-muhammed/react-connect-div",
-                    icon: <Github size="1em" />,
-                },
-                {
-                    name: "NPM Link",
-                    url: "https://www.npmjs.com/package/react-connect-div",
-                    icon: <Workflow size="1em" />,
-                },
-            ],
-        },
-        {
-            name: "Alma Foods",
-            description:
-                "Converted a HTML, CSS, JS website into React + Typescript",
-            date: "Jan 2024 - Jan 2024",
-
-            links: [],
-        },
-        {
-            name: "Sorting Visualizer",
-            description:
-                "Using this project anyone can explore diverse sorting algorithms like Insertion, Bubble, Selection, Quick, and Merge",
-            date: "Dec 2023 - Dec 2023",
-            preview: "/images/homepage/sorting-visualizer-preview.png",
-            links: [
-                {
-                    name: "Git repo",
-                    url: "https://github.com/raazi-muhammed/sorting-visualizer",
-                    icon: <Github size="1em" />,
-                },
-                {
-                    name: "Live link",
-                    url: "https://sorting-visualizer-rmk.netlify.app/",
-                    icon: <Globe size="1em" />,
-                },
-            ],
-        },
-        {
-            name: "Rastreo",
-            description: "A score-tracking app with features like",
-            date: "Mar 2024 - Mar 2024",
-            preview: "/images/homepage/rastreo-preview.png",
-            links: [
-                {
-                    name: "Git repo",
-                    url: "https://github.com/raazi-muhammed/rastreo",
-                    icon: <Github size="1em" />,
-                },
-                {
-                    name: "Live link",
-                    url: "https://rastreo-rmk.netlify.app/",
-                    icon: <Globe size="1em" />,
-                },
-            ],
-        },
-    ];
     return (
         <section id="projects" className="bg-default-50/50 py-8">
             <Container>
@@ -153,7 +46,7 @@ export default function Projects() {
                                 whileHover="hover">
                                 <Card
                                     as={NavLink}
-                                    to="project"
+                                    to={`project?name=${project.name}`}
                                     isFooterBlurred
                                     className="mb-8 min-h-60 overflow-visible py-4">
                                     <CardHeader className="z-30 flex-col items-start px-4 pb-0 pt-2">

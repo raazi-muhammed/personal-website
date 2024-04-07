@@ -36,6 +36,8 @@ pre {
     padding: 1rem;
     background-color: #18181b;
     border-radius: 0.5rem;
+    width: 100%;
+    overflow: auto;
 }
 
 table {
@@ -45,6 +47,8 @@ table {
     padding: 1rem;
     border-radius: 1rem;
     width: 100%;
+    display: block;
+    overflow: auto;
 }
 
 td {
@@ -53,6 +57,7 @@ td {
     padding: 10px;
     background-color: #18181b;
     padding-inline: 20px;
+    white-space: nowrap;
 }
 th {
     background-color: #27272a;
