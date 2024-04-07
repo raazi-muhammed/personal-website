@@ -1,4 +1,6 @@
+import Container from "./components/layout/Components";
 import NavBar from "./components/layout/NavBar";
+import ContactMe from "./pages/homepage/ContactMe";
 import Hero from "./pages/homepage/Hero";
 import Projects from "./pages/homepage/Projects";
 import Skills from "./pages/homepage/Skills";
@@ -10,6 +12,12 @@ export default function App() {
             <Hero />
             <Projects />
             <Skills />
+            <ContactMe />
+            <footer className="py-4">
+                <Container>
+                    <p className="text-center">by Raazi Muahmmed</p>
+                </Container>
+            </footer>
         </main>
     );
 }

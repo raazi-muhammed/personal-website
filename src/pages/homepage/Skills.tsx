@@ -132,7 +132,7 @@ export default function Skills() {
                     {skills.map((skill) => (
                         <Card
                             radius="lg"
-                            className="flex w-fit flex-row gap-3 rounded-large border-1 border-white/20 bg-white bg-white/10 p-2 align-middle">
+                            className="flex w-fit flex-row gap-3 rounded-large border-1 border-white/10 bg-white bg-white/10 p-2 align-middle">
                             <p className="mx-4">{skill.name}</p>
                         </Card>
                     ))}
