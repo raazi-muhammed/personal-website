@@ -3,7 +3,7 @@ import { AppWindowMac, Laptop, Palette } from "lucide-react";
 import Container from "../../components/layout/Components";
 import Heading from "../../components/layout/Heading";
 import { motion } from "framer-motion";
-import { animateIn } from "../../utils/animations";
+import { defaultAnimation } from "../../utils/animations";
 import { useState } from "react";
 
 enum SkillType {
@@ -266,7 +266,7 @@ export default function Skills() {
                                 <motion.div
                                     transition={{ delay: index * 0.05 }}
                                     key={`${skill.name}-${new Date()}`}
-                                    variants={animateIn}>
+                                    variants={defaultAnimation}>
                                     <Card
                                         radius="lg"
                                         className="flex w-fit flex-row gap-3 rounded-large border-1 border-white/10 bg-white bg-white/10 p-2 align-middle">

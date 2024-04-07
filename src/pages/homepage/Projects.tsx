@@ -10,6 +10,7 @@ import {
     Link,
 } from "@nextui-org/react";
 import { motion } from "framer-motion";
+import { defaultAnimation } from "../../utils/animations";
 
 export default function Projects() {
     const projects: {
@@ -140,24 +141,14 @@ export default function Projects() {
                     <section className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
                         {projects.map((project) => (
                             <motion.div
-                                initial={{
-                                    y: 40,
-                                    opacity: 0,
-                                }}
-                                whileInView={{
-                                    y: 0,
-                                    opacity: 1,
-                                }}
-                                whileTap={{
-                                    scale: 0.95,
-                                }}
+                                variants={defaultAnimation}
+                                initial="initial"
+                                whileInView="animate"
+                                whileTap="tap"
                                 transition={{
                                     duration: 0.3,
                                 }}
-                                whileHover={{
-                                    scale: 1.04,
-                                    y: -20,
-                                }}>
+                                whileHover="hover">
                                 <Card
                                     isFooterBlurred
                                     className="mb-8 min-h-60 overflow-visible py-4">
