@@ -34,7 +34,7 @@ export default function ContactMe() {
         <section id="contact-me" className="bg-default-50/50 py-8">
             <Container>
                 <Heading>Contact Me</Heading>
-                <section className="grid grid-cols-3 gap-4">
+                <section className="grid grid-cols-1 gap-4 lg:grid-cols-3">
                     {socials.map((social) => (
                         <Card>
                             <CardBody className="flex flex-row gap-2">
