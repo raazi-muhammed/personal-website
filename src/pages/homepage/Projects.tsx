@@ -8,6 +8,7 @@ import {
     CardFooter,
     Button,
     Link,
+    Image,
 } from "@nextui-org/react";
 import { motion } from "framer-motion";
 import { defaultAnimation } from "../../utils/animations";
@@ -169,9 +170,9 @@ export default function Projects() {
                                     {project.preview ? (
                                         <CardBody className="-mb-4 -mt-8 overflow-visible p-0 align-bottom">
                                             <div className="absolute bottom-0 left-0 right-0 top-0 z-20 h-full bg-gradient-to-b from-default-50 to-transparent"></div>
-                                            <img
+                                            <Image
                                                 alt="Card background"
-                                                className="z-10 m-0 mb-0 mt-auto h-full rounded-xl object-cover"
+                                                className="z-10 m-0 mb-0 mt-auto h-auto rounded-xl object-cover"
                                                 src={project.preview}
                                             />
                                         </CardBody>
