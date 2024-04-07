@@ -1,4 +1,4 @@
-import { ChevronRight, Github, Globe } from "lucide-react";
+import { ChevronRight, Github, Globe, Workflow } from "lucide-react";
 import Container from "../../components/layout/Components";
 import Heading from "../../components/layout/Heading";
 import {
@@ -15,7 +15,7 @@ export default function Projects() {
         name: string;
         description: string;
         date: string;
-        preview: string;
+        preview?: string;
         links: {
             name: string;
             url: string;
@@ -41,7 +41,7 @@ export default function Projects() {
             description:
                 "A comprehensive Multi-Vendor E-Commerce platform facilitating buying and selling of products",
             date: "Sep 2023 - Nov 2023",
-            preview: "/images/homepage/omniflow-preview.png",
+            preview: "/images/homepage/shop-nexus-preview.png",
             links: [
                 {
                     name: "Git repo",
@@ -56,11 +56,29 @@ export default function Projects() {
             ],
         },
         {
+            name: "NPM: React Connect Div",
+            description: "Developed a npm package to connect two divs together",
+            date: "Apr 2023 - Apr 2023",
+            preview: "/images/homepage/react-connect-div.png",
+            links: [
+                {
+                    name: "Git repo",
+                    url: "https://github.com/raazi-muhammed/react-connect-div",
+                    icon: <Github size="1em" />,
+                },
+                {
+                    name: "NPM Link",
+                    url: "https://www.npmjs.com/package/react-connect-div",
+                    icon: <Workflow size="1em" />,
+                },
+            ],
+        },
+        {
             name: "Alma Foods",
             description:
                 "Converted a HTML, CSS, JS website into React + Typescript",
             date: "Jan 2024 - Jan 2024",
-            preview: "/images/homepage/omniflow-preview.png",
+
             links: [],
         },
         {
@@ -68,7 +86,7 @@ export default function Projects() {
             description:
                 "Using this project anyone can explore diverse sorting algorithms like Insertion, Bubble, Selection, Quick, and Merge",
             date: "Dec 2023 - Dec 2023",
-            preview: "/images/homepage/omniflow-preview.png",
+            preview: "/images/homepage/sorting-visualizer-preview.png",
             links: [
                 {
                     name: "Git repo",
@@ -86,7 +104,7 @@ export default function Projects() {
             name: "Rastreo",
             description: "A score-tracking app with features like",
             date: "Mar 2024 - Mar 2024",
-            preview: "/images/homepage/omniflow-preview.png",
+            preview: "/images/homepage/rastreo-preview.png",
             links: [
                 {
                     name: "Git repo",
@@ -124,18 +142,21 @@ export default function Projects() {
                                     {project.description}
                                 </small>
                             </CardHeader>
-                            <CardBody className="-mb-4 -mt-8 overflow-visible p-0 align-bottom">
-                                <div className="absolute bottom-0 left-0 right-0 top-0 z-20 h-full bg-gradient-to-b from-default-50 to-transparent"></div>
-                                <img
-                                    alt="Card background"
-                                    className="z-10 m-0 mb-0 mt-auto h-full rounded-xl object-cover"
-                                    src={project.preview}
-                                />
-                            </CardBody>
+                            {project.preview ? (
+                                <CardBody className="-mb-4 -mt-8 overflow-visible p-0 align-bottom">
+                                    <div className="absolute bottom-0 left-0 right-0 top-0 z-20 h-full bg-gradient-to-b from-default-50 to-transparent"></div>
+                                    <img
+                                        alt="Card background"
+                                        className="z-10 m-0 mb-0 mt-auto h-full rounded-xl object-cover"
+                                        src={project.preview}
+                                    />
+                                </CardBody>
+                            ) : null}
                             {project.links.length ? (
                                 <CardFooter className="absolute -bottom-5 left-4 right-4 z-50 mx-auto h-10 w-fit justify-between gap-2 rounded-large border-1 border-white/10 shadow-small before:rounded-xl before:bg-white/10">
                                     {project.links.map((link) => (
                                         <Button
+                                            target="_blank"
                                             href={link.url}
                                             as={Link}
                                             className="bg-white/10 text-tiny text-white"
