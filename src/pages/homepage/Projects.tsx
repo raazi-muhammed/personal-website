@@ -120,7 +120,7 @@ export default function Projects() {
         },
     ];
     return (
-        <section className="bg-default-50/50 py-8">
+        <section id="projects" className="bg-default-50/50 py-8">
             <Container>
                 <Heading>Projects</Heading>
                 <section className="grid grid-cols-3 gap-4">

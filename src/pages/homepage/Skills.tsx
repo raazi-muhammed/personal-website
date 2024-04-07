@@ -105,7 +105,7 @@ export default function Skills() {
     ];
 
     return (
-        <section className="py-12">
+        <section id="skills" className="py-12">
             <Container>
                 <Heading className="mb-4">Skills</Heading>
                 <section className="grid grid-cols-3 gap-4">
