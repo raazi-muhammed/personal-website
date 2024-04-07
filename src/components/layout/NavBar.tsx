@@ -15,7 +15,10 @@ export default function App() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
     return (
-        <Navbar maxWidth="2xl" onMenuOpenChange={setIsMenuOpen}>
+        <Navbar
+            maxWidth="2xl"
+            style={{ zIndex: 99999 }}
+            onMenuOpenChange={setIsMenuOpen}>
             <NavbarContent>
                 <NavbarMenuToggle
                     aria-label={isMenuOpen ? "Close menu" : "Open menu"}
@@ -50,7 +53,7 @@ export default function App() {
                     </div>
                 </NavbarItem>
             </NavbarContent>
-            <NavbarMenu className="dark">
+            <NavbarMenu style={{ zIndex: 99999 }} className="dark">
                 <NavbarMenuItem className="grid gap-2">
                     <Link href="#projects" className="text-white">
                         Project
