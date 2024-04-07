@@ -1,0 +1,108 @@
+h1 {
+    font-size: 2.25rem;
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+h2 {
+    font-size: 1.75em;
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+h4 {
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+h5 {
+    font-size: 1.17em;
+    font-weight: bold;
+}
+
+h6 {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+pre {
+    margin-block: 1rem;
+    padding: 1rem;
+    background-color: #18181b;
+    border-radius: 0.5rem;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: #18181b;
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 100%;
+}
+
+td {
+    border: solid 1px #18181b;
+    border-style: none solid solid none;
+    padding: 10px;
+    background-color: #18181b;
+    padding-inline: 20px;
+}
+th {
+    background-color: #27272a;
+    color: #a1a1aa;
+    padding: 10px;
+    text-align: start;
+    padding-inline: 20px;
+}
+th:first-child {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+th:last-child {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+tr,
+td:first-child {
+    border-top-left-radius: 10px;
+}
+tr,
+td:last-child {
+    border-top-right-radius: 10px;
+}
+
+tr,
+td:first-child {
+    border-bottom-left-radius: 10px;
+}
+tr,
+td:last-child {
+    border-bottom-right-radius: 10px;
+}
+
+tr:first-child td {
+    border-top-style: solid;
+}
+tr td:first-child {
+    border-left-style: solid;
+}
+
+img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+hr {
+    margin-block: 10px;
+    color: #27272a;
+    border-color: #27272a;
+    background-color: #27272a;
+}

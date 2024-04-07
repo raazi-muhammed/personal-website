@@ -12,6 +12,7 @@ import {
 } from "@nextui-org/react";
 import { motion } from "framer-motion";
 import { defaultAnimation } from "../../utils/animations";
+import { NavLink } from "react-router-dom";
 
 export default function Projects() {
     const projects: {
@@ -151,6 +152,8 @@ export default function Projects() {
                                 }}
                                 whileHover="hover">
                                 <Card
+                                    as={NavLink}
+                                    to="project"
                                     isFooterBlurred
                                     className="mb-8 min-h-60 overflow-visible py-4">
                                     <CardHeader className="z-30 flex-col items-start px-4 pb-0 pt-2">
