@@ -2,8 +2,8 @@ import Hero from "./Hero";
 import Projects from "./Projects";
 import Skills from "./Skills";
 import ContactMe from "./ContactMe";
-import { Container } from "lucide-react";
 import { motion } from "framer-motion";
+import Container from "../../components/layout/Components";
 
 export default function index() {
     return (
