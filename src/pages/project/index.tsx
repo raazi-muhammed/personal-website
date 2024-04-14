@@ -36,10 +36,12 @@ export default function index() {
                             </section>
                         ))}
                     </section>
-                    <img
-                        className="h-56 w-full object-cover"
-                        src={project.preview}
-                    />
+                    {project.preview && (
+                        <img
+                            className="h-56 w-full object-cover"
+                            src={project.preview}
+                        />
+                    )}
                 </section>
 
                 <div className="block lg:hidden">

@@ -18,8 +18,7 @@ export const projects: {
             "Project Toolkit for Effortless Planning and Management of Projects.",
         date: "Mar 2024 - Present",
         preview: "/images/homepage/omniflow-preview.png",
-        readmeMeLink:
-            "https://raw.githubusercontent.com/raazi-muhammed/shop-nexus/main/README.md",
+        readmeMeLink: "/markdown/projects/omniflow.md",
         links: [
             {
                 name: "Git repo",
@@ -34,8 +33,7 @@ export const projects: {
             "A comprehensive Multi-Vendor E-Commerce platform facilitating buying and selling of products",
         date: "Sep 2023 - Nov 2023",
         preview: "/images/homepage/shop-nexus-preview.png",
-        readmeMeLink:
-            "https://github.com/raazi-muhammed/shop-nexus/main/README.md",
+        readmeMeLink: "/markdown/projects/shop-nexus.md",
         links: [
             {
                 name: "Git repo",
@@ -54,8 +52,7 @@ export const projects: {
         description: "Developed a npm package to connect two divs together",
         date: "Apr 2023 - Apr 2023",
         preview: "/images/homepage/react-connect-div.png",
-        readmeMeLink:
-            "https://raw.githubusercontent.com/raazi-muhammed/react-connect-div/main/README.md",
+        readmeMeLink: "/markdown/projects/react-connect-div.md",
         links: [
             {
                 name: "Git repo",
@@ -71,12 +68,10 @@ export const projects: {
     },
     {
         name: "Alma Foods",
-        readmeMeLink:
-            "https://github.com/raazi-muhammed/omniflow/main/README.md",
+        readmeMeLink: "/markdown/projects/alma-foods.md",
         description:
             "Converted a HTML, CSS, JS website into React + Typescript",
         date: "Jan 2024 - Jan 2024",
-
         links: [],
     },
     {
@@ -85,8 +80,7 @@ export const projects: {
             "Using this project anyone can explore diverse sorting algorithms like Insertion, Bubble, Selection, Quick, and Merge",
         date: "Dec 2023 - Dec 2023",
         preview: "/images/homepage/sorting-visualizer-preview.png",
-        readmeMeLink:
-            "https://github.com/raazi-muhammed/sorting-visualizer/main/README.md",
+        readmeMeLink: "/markdown/projects/sorting-visualizer.md",
         links: [
             {
                 name: "Git repo",
@@ -105,8 +99,8 @@ export const projects: {
         description: "A score-tracking app with features like",
         date: "Mar 2024 - Mar 2024",
         preview: "/images/homepage/rastreo-preview.png",
-        readmeMeLink:
-            "https://github.com/raazi-muhammed/rastreoj/main/README.md",
+        readmeMeLink: "/markdown/projects/rastreo.md",
+
         links: [
             {
                 name: "Git repo",
