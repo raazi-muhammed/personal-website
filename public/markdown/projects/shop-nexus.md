@@ -4,21 +4,50 @@
 
 ## Features
 
--   A comprehensive Multi-Vendor E-Commerce platform facilitating buying and selling of products
--   Options to manage product, stock, coupon, offers and order for the seller
--   The system includes user and seller management, with administrative oversight and management across the entire app
--   Both sellers and admins have dashboards with charts and sales reports
--   Additional features include wallet, payment, referrals, cart, whishlist and address management
--   Added subscription model called “Shop Nexus Plus” with benefits like chatting directly to the seller and more...
+### Home Page
 
-## About the Author
+-   Dynamic home page with sections for recent products, best selling items, and frequently asked questions.
+-   Product details page with image zoom, reviews, related products, and seller information.
 
--   **Author:** Raazi Muhammed K
--   **GitHub:** [raazi-muhammed](https://github.com/raazi-muhammed)
--   **Linkedin:** [raazimuhammed](https://www.linkedin.com/in/raazimuhammed/)
+### Product Management
 
-## Project Modules
+-   Sellers can add, edit, and soft delete products, manage stock, and upload product images using Cloudinary.
+-   Admins have full control over products, orders, coupons, and events.
 
-For a detailed list of project modules, please visit our [GitHub project board](https://github.com/raazi-muhammed/projects/4).
+### Checkout & Orders
 
-Feel free to explore and contribute to this project as it evolves to provide a comprehensive and robust multi-vendor e-commerce solution.
+-   Users can view and manage their orders, including cancellation, return, and invoice download.
+-   Payment integration with RazorPay, wallet, and cash on delivery options.
+
+### Events & Coupons
+
+-   Create and manage coupons and events based on various criteria such as category, products, and discounts.
+-   Exclusive events for Shop Nexus Plus members.
+
+### Shop Nexus Plus
+
+-   Real-time messaging between users and sellers, recurring payments, free shipping, and exclusive events.
+
+### Analytics
+
+-   Dashboard and sales reports for admins and sellers with charts and downloadable reports in multiple formats.
+
+### Wallet
+
+-   Users and sellers can add money to their wallet, make payments, and view transaction history.
+
+### Referral
+
+-   Generate referral codes and signup links, and receive credits on account creation and first purchase.
+
+### User, Seller & Admin Management
+
+-   Authentication and authorization mechanisms for users, sellers, and admins.
+-   User verification via email using JWT and Nodemailer.
+-   User profile management, including details editing, password reset, and avatar changes.
+
+## Tech Stack
+
+-   **Frontend**: React, Redux, SCSS, Bootstrap
+-   **Backend**: Node.js, Express.js, MongoDB
+-   **Libraries & Services**: Socket.IO, Razorpay, Firebase, Nodemailer, Cloudinary, Multer, Morgan, JWT

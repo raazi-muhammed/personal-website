@@ -25,6 +25,11 @@ export const projects: {
                 url: "https://github.com/raazi-muhammed/omniflow",
                 icon: <Github size="1em" />,
             },
+            {
+                name: "Live link",
+                url: "https://omni-flow.live/",
+                icon: <Globe size="1em" />,
+            },
         ],
     },
     {
