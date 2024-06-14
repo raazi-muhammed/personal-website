@@ -33,6 +33,26 @@ export const projects: {
         ],
     },
     {
+        name: "KeySense AI",
+        description:
+            "An AI based typing assistance that checks your typing speed and accuracy",
+        date: "May 2024 - May 2024",
+        preview: "/images/homepage/key-sense-ai.png",
+        readmeMeLink: "/markdown/projects/key-sense-ai.md",
+        links: [
+            {
+                name: "Git repo",
+                url: "https://github.com/raazi-muhammed/key-sense-ai",
+                icon: <Github size="1em" />,
+            },
+            {
+                name: "Live link",
+                url: "https://key-sense-ai.vercel.app/",
+                icon: <Globe size="1em" />,
+            },
+        ],
+    },
+    {
         name: "Shop Nexus",
         description:
             "A comprehensive Multi-Vendor E-Commerce platform facilitating buying and selling of products",
